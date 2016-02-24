@@ -1,0 +1,101 @@
+body,div,label,input,button,ul,li,p{margin:0;padding: 0;font-size: 12px;font-weight: bold;-moz-user-select: none;-webkit-user-select: none;}
+ul,li{list-style: none;}
+html,body{height: 100%;width: 100%;overflow: hidden;}
+.container{height: 100%;width: 100%;overflow: hidden;}
+input{border:none;display: inline-block;}
+label{display: inline-block;height: 26px;line-height: 26px;}
+input{border:1px solid rgb(0,200,117);height: 24px;font-weight: normal;}
+.allInput{-webkit-appearance: none;}
+.container ul{margin: 60px 12.5%;position: relative;}
+.container ul li{width: 100%;height: 30px;margin: 15px 0;}
+.container ul li:nth-child(4){height: 100px;}
+.container ul li:nth-child(4)>div{height: 32px;}
+.container ul li:nth-child(4)>div>*{vertical-align: middle}
+.container ul li:nth-child(6)>div{top:18px;width: 20%;height: 32px;float: left;}
+.container ul li:nth-child(6)>div>*{vertical-align: middle}
+.schoolTitle{margin: 0 0 10px;}
+.schoolRadio{margin-left: 5%;}
+.companyRadio{margin-left:5%;}
+.first{margin-top: 15px;}
+.second{margin-top: 10px;}
+.positionName{display: inline-block;width: 16.5%;float: right;text-align: center;}
+.position{float: right;}
+.container ul li:nth-child(6){height: 60px;}
+.enter{width:74%;float:right;}
+input.company{width: 23%;float: right;}
+input.position{width: 32%;margin-right: 2%;}
+input.care{width: 66%;}
+.present{margin:10px 33px;}
+.absent{margin:10px 20px;}
+.tips{opacity:0;position:absolute;top:420px;left:50%;z-index:99;text-align: center;height: 30px;line-height: 30px;font-size: 12px!important;font-weight:normal;background-color:rgba(0,0,0,0.8);color: white;border-radius: 3px;}
+@keyframes tips{
+    0%{opacity: 0;top:410px;}
+    10%{opacity: 1;top:400px;}
+    50%{opacity: 1;top:400px;}
+    75%{opacity: 1;top:400px;}
+    100%{opacity: 0;top:400px;}
+}
+@-webkit-keyframes tips{
+    0%{opacity: 0;top:410px;}
+    10%{opacity: 1;top:400px;}
+    50%{opacity: 1;top:400px;}
+    75%{opacity: 1;top:400px;}
+    100%{opacity: 0;top:400px;}
+ }
+@-moz-keyframes tips{
+    0%{opacity: 0;top:410px;}
+    10%{opacity: 1;top:400px;}
+    50%{opacity: 1;top:400px;}
+    75%{opacity: 1;top:400px;}
+    100%{opacity: 0;top:400px;}
+}
+
+.button{color:white;background-color: rgb(0,200,117);height: 32px;line-height:32px;border-radius:3px;text-align: center;width: 52%;margin-left: 24%;}
+.redStar{color: red;margin-right: 5px;}
+@media all and (max-height: 480px){
+    .container ul {
+        margin: 4px 12.5%;
+        position: relative;
+    }
+    @-webkit-keyframes tips{
+        0%{opacity: 0;top:370px;}
+        10%{opacity: 1;top:360px;}
+        50%{opacity: 1;top:360px;}
+        75%{opacity: 1;top:360px;}
+        100%{opacity: 0;top:360px;}
+    }
+}
+@media all and (min-height:481px) and (max-height: 500px){
+    .container ul {
+        margin: 30px 12.5%;
+        position: relative;
+    }
+}
+@media all and (min-width: 768px){
+    .container{height: 100%;width: 40%;position: absolute;left: 50%;border:1px solid #aaa;background: #eee;}
+    html,body{background-color: #ccc;}
+    .button{cursor:pointer;}
+    .container ul li{margin: 10% 0;}
+}
+@media all and (min-width: 350px) and (max-width:395px){
+    body,div,label,input,button,ul,li,p{font-size: 14px;}
+    .container ul {
+        margin: 50px 12.5%;
+        position: relative;
+    }
+    input{height: 30px;font-weight: normal;}
+    label{height: 32px;line-height: 32px;}
+    .container ul li {
+        margin: 25px 0;
+    }
+}
+@media all and (min-width:396px){
+    body,div,label,input,button,ul,li,p{font-size: 16px;}
+    input{height: 30px;font-weight: normal;}
+    label{height: 32px;line-height: 32px;}
+    .container ul li {
+        margin: 38px 0;
+    }
+}
+
+
